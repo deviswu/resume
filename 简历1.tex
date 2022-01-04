@@ -1,0 +1,165 @@
+\documentclass[10pt]{ctexart}
+\usepackage{multicol}
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins, breakable, theorems}
+\usepackage{bookmark}
+\tcbuselibrary{skins,xparse}
+\pagestyle{empty}
+\usepackage{geometry}
+\geometry{left=2cm,right=2cm,top=2cm,bottom=2cm}
+\usepackage{varwidth}
+\begin{document}
+	\hbox{
+		\begin{tcolorbox}[enhanced,
+			size=minimal,auto outer arc,
+			width=1.2cm,octogon arc,
+			colback=MidnightBlue,colframe=white,colupper=white,
+			fontupper=\fontsize{7mm}{7mm}\selectfont\bfseries\sffamily,
+			halign=center,valign=center,
+			square,arc is angular,
+			borderline={0.2mm}{-1mm}{MidnightBlue} ]
+			个 
+		\end{tcolorbox}
+		
+		
+		\begin{tcolorbox}[enhanced,
+			size=minimal,auto outer arc,
+			width=1.2cm,octogon arc,
+			colback=MidnightBlue,colframe=white,colupper=white,
+			fontupper=\fontsize{7mm}{7mm}\selectfont\bfseries\sffamily,
+			halign=center,valign=center,
+			square,arc is angular,
+			borderline={0.2mm}{-1mm}{MidnightBlue} ]
+			人 
+		\end{tcolorbox}
+		
+		
+		\begin{tcolorbox}[enhanced,
+			size=minimal,auto outer arc,
+			width=1.2cm,octogon arc,
+			colback=MidnightBlue,colframe=white,colupper=white,
+			fontupper=\fontsize{7mm}{7mm}\selectfont\bfseries\sffamily,
+			halign=center,valign=center,
+			square,arc is angular,
+			borderline={0.2mm}{-1mm}{MidnightBlue} ]
+			简 
+		\end{tcolorbox}
+		
+		
+		\begin{tcolorbox}[enhanced,
+			size=minimal,auto outer arc,
+			width=1.2cm,octogon arc,
+			colback=MidnightBlue,colframe=white,colupper=white,
+			fontupper=\fontsize{7mm}{7mm}\selectfont\bfseries\sffamily,
+			halign=center,valign=center,
+			square,arc is angular,
+			borderline={0.2mm}{-1mm}{MidnightBlue} ]
+			历
+		\end{tcolorbox}
+	}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\noindent\color{MidnightBlue}\rule{\textwidth}{4pt}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtcolorbox{mybox}[2][]{enhanced,
+	before skip=2mm,after skip=2mm,
+	colback=black!5,colframe=black!50,boxrule=0.2mm,
+	attach boxed title to top left={xshift=1cm,yshift*=1mm-\tcboxedtitleheight},
+	varwidth boxed title*=-3cm,
+	boxed title style={frame code={
+			\path[fill=tcbcolback!30!black]
+			([yshift=-1mm,xshift=-1mm]frame.north west)
+			arc[start angle=0,end angle=180,radius=1mm]
+			([yshift=-1mm,xshift=1mm]frame.north east)
+			arc[start angle=180,end angle=0,radius=1mm];
+			\path[left color=tcbcolback!80!black,right color=tcbcolback!80!black,
+			middle color=tcbcolback!80!white]
+			([xshift=-2mm]frame.north west) -- ([xshift=2mm]frame.north east)
+			[rounded corners=1mm]-- ([xshift=1mm,yshift=-1mm]frame.north east)
+			-- (frame.south east) -- (frame.south west)
+			-- ([xshift=-1mm,yshift=-1mm]frame.north west)
+			[sharp corners]-- cycle;
+		},interior engine=empty,
+	},
+	fonttitle=\bfseries,
+	title={#2},#1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+\begin{mybox}[colbacktitle=MidnightBlue]{基本信息}
+\begin{minipage}{0.4\linewidth}
+	姓\quad \quad 名：吴宁	\\
+	民\quad \quad 族：汉族\\		
+	学\quad \quad 历：硕士\\
+	技术职称：中级\\
+	联系电话：15142762132\\
+	邮\quad \quad 箱：wun.gwdc@cnpc.com.cn\\
+	语言能力：英语六级、中石油托福考试
+	
+\end{minipage}
+	\begin{minipage}{0.3\linewidth}
+	出生年月：1985.9	\\
+	身\quad \quad 高：181cm\\
+	政治面貌：中共党员\\
+	毕业院校：中国石油大学（华东）\\	
+	计算机能力： 熟练使用office软件、Matlab、Landmarks、python、js。
+\end{minipage}
+	\begin{minipage}{0.3\linewidth}
+	\begin{center}
+	\quad	\includegraphics[width=0.6\linewidth]{1}\\[5pt]
+	\end{center}
+\end{minipage}
+\end{mybox}
+
+\begin{mybox}[colbacktitle=MidnightBlue]{教育背景}
+	2010.09--2012.07        \hfill            中国石油大学（华东）            \hfill         机械工程（硕士）\\
+	2005.09--2009.07      \hfill         \quad\quad 河南科技学院        \hfill      机械设计制造及自动化（本科）
+\end{mybox}
+	
+\begin{mybox}[colbacktitle=MidnightBlue]{工作经历}
+2017年9月--至今			\quad\quad\	\quad\quad\quad\quad\,长城钻探工程技术研究院			\hfill 钻井工程设计、钻井监督、钻井信息化\\
+2012年7月--2017年9月 	\quad\quad\quad	 长城钻探工程技术研究院   		               \hfill 分支井技术工程师
+\end{mybox}
+	
+\begin{mybox}[colbacktitle=MidnightBlue]{科研项目}
+2021.01--2021.11		\hfill 	    集团公司侧钻井技术示范与推广             \hfill         集团项目\\
+2021.01--2021.11      \hfill     \quad\quad 工程作业智能支持系统3.0构建研究              \hfill     中油技服\\
+2014.01--2015.12       \hfill     \quad\quad 侧钻水平井/分支井新工具现场试验               \hfill    集团公司\\
+2014.01--2014.12	      \hfill       多分支井钻完井技术研究与应用                   \hfill    长城公司
+\end{mybox}
+\begin{mybox}[colbacktitle=MidnightBlue]{项目经历}
+1、集团公司侧钻井技术示范与推广                  \hspace{75pt} 系统研发与现场部署    \hfill     技术负责人\\  
+2、工程作业智能支持系统3.0构建研究                \hspace{55pt}  系统维护与功能定制    \hfill      技术负责人  \\ 
+3、井控检查系统研制                               \hspace{135pt}  系统研发与现场试点    \hfill      项目负责人\\
+4、稠油热采钻完井试验室创新能力建设               \hspace{56pt}   试验方案定制与试验工具研\hfill   项目负责人      \\
+5、侧钻水平井/分支井新工具现场试验              \hspace{62pt}    新工具的修改与试验       \hfill   技术负责人\\
+6、多分支井钻完井技术研究与应用               \hspace{76pt}      分支井工具研制           \hfill   现场技术员
+\end{mybox}
+
+\begin{mybox}[colbacktitle=MidnightBlue]{工作成果}
+发明专利3项：\\
+《一种分支井底座固定装置研制》、《稠油热采钻完井试验装置研制》、《一种分支井防转底座研制》
+\end{mybox}
+\newpage
+{\noindent\color{MidnightBlue}\rule{\textwidth}{4pt}}
+\begin{mybox}[colbacktitle=MidnightBlue]{自我评价}
+\qquad 2012年毕业后入职长城钻探工程有限公司工程技术研究院分支井技术研究所，负责分支井技术研究与应用；2017年到钻井设计监督中心，负责钻井信息化、钻井设计、钻井监督管理等工作。
+\indexspace
+\textbf{1、信息化、数字化}
+\indexspace 
+\qquad 担任信息化、数字化转型的研发与推广技术人员。推进《集团公司侧钻井技术示范与推广》项目，负责侧钻井专业计算分析模块和侧钻井井眼轨迹监控模块的集成测试以及集团公司侧钻井网站的研制，包括虚拟试验室展示、侧钻井技术展示、特色产品展示、技术交流论坛、侧钻井咨询，资源下载等功能。参与《钻井施工智能优化分析系统》，负责长水平段管柱力学监测与优化模块、组态式井筒风险综合预警系统模块、多元钻井参数优化模块的研发，其中长水平段管柱力学监测与优化模块在川渝页岩气现场测试与应用。
+
+\qquad 参与乍得、尼日尔数字化采传服务，推进境外项目数字化转型试点工作，配合公司乍得、尼日尔项目部向甲方进行推介、对接、程序演示工作，参与了现场井筒数据采集器、海外钻完井现场数据采集终端、海外钻完井数据管理与分析应用系统等软硬件的研发与定制。钻完井现场数据采集终端（英文版本）包括动态数据采集、实时数据采集、数据存储，数据上传、监督审核等功能，实现了多语言、多单位制、多专业数据的标准化、自动化采集传输。钻完井数据管理与分析应用系统（英文版本）定制了客户端自动更新，多单位制转换，多语言转换，单井数据查询与KPI分析，多井数据统计分析，DDR报表、井史自动生成等功能。
+
+\qquad 推进《工程作业智能支持系统3.0构建研究》，负责EISS系统工程动态模拟模块、EISS工程作业智能支持模块、EISS井控管理模块的集成测试和长城公司工程作业智能支持系统维护与定制，定制了长城公司EISS系统首页、按区块搜索模块、电测阻卡情况统计表、划眼情况统计表、螺杆和工具故障统计表、漏失井信息统计表、西南指挥中心钻井日报、西部生产指挥中心日报、东部生成指挥中心日报、统一日报表，并已挂到长城公司EISS系统中。
+
+\qquad 参与中油技服《虚拟现实、人工智能技术在工程技术作业过程支持研究应用》项目，开展人工智能技术在钻完井及压裂作业过程支持研究，负责软件与理论算法研究工作，创新引入数据挖掘与人工智能技术，为解决钻井风险预警、压裂砂堵监控难的技术难题，提供新的方法与手段。
+研制了井控检查系统，用于不同级别的井控检查，该系统实现了井控检查、井控考试、证件检查、资料库、统计分析功能，并在长城公司西南指试点应用。
+
+\indexspace 
+\textbf{2、技术支持}
+\indexspace 
+ \qquad 参与辽河油田储气库项目技术支持工作，使用compass、wellplan等计算软件，为井队提供数据参考，并驻井双31储气库，攥写双31-5井、双31-7井施工方案和施工总结，编制双31区块储气库井技术模板。参与长城公司井控检查和集团公司井控检，在西南指挥中心参与长城公司2021年下半年井控专项检查和绩效考核工作，对西南地区10个平台14个井队和1个井下作业队进行了井控检查，并研制了井控检查系统，应用到西南指井控检查工作当中。
+\end{mybox}
+
+
+\end{document}
